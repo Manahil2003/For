@@ -1,0 +1,11 @@
+main() {
+  int c;
+  int sum = 0;
+  stdout.write("Enter number:");
+  var tabInstr = stdin.readLineSync();
+  var n = int.tryParse(tabInstr!);
+  for (c = 1; c <= n!; c++) {
+    sum = sum + (c * c);
+  }
+  print("Sum is $sum");
+}
