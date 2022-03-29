@@ -1,0 +1,11 @@
+main() {
+  stdout.write("Enter number:");
+  var tabInstr = stdin.readLineSync();
+  var tab = int.tryParse(tabInstr!);
+  stdout.write("Enter length:");
+  var lenInStr = stdin.readLineSync();
+  var len = num.tryParse(lenInStr!);
+  for (int c = 1; c <= len!; c++) {
+    print("$tab * $c  = ${tab! * c}");
+  }
+}
