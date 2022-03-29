@@ -1,0 +1,19 @@
+main() {
+  int i;
+
+  stdout.write("Enter the value of x:");
+  var xInstr = stdin.readLineSync();
+  var x = int.tryParse(xInstr!);
+
+  stdout.write("Enter the range:");
+  var rangeInstr = stdin.readLineSync();
+  var range = int.tryParse(rangeInstr!);
+
+  var sum = 0, den;
+
+  for (i = 0; i < range!; i++) {
+    den = pow(x!, i);
+    sum = sum + (1 ~/ den);
+  }
+  print("Sum of Series $sum");
+}
